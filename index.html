@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predicting Pressure App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Predicting Pressure App">
+  <meta name="author" content="">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Predicting Pressure App</h1>
+    <h2>Developing Data Products Course</h2>
+    <p><br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Predicting Pressure Application.</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Overview</p>
+
+<ul>
+<li>It predicts vapor pressure values of mercury from given temperature values.</li>
+<li>The bs function of the spline package has been implemented.</li>
+<li>A range of degrees of freedom from 3 to 10 have been used. </li>
+<li>Adjusted R Squared is estimated, which is a metric for evaluating the goodness of fit of the model.</li>
+<li>The supplied data are from pressure dataset package. </li>
+<li>You can choose scatter and line style plot.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Predicing Pressure View.</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>You can run Predicting Pressure App in <a href="https://ae2015.shinyapps.io/predict_pressure/">https://ae2015.shinyapps.io/predict_pressure/</a>.</p>
+
+<p><img src="assets/img/img1b.png" alt="alt text"></p>
+
+<p>When you change the degrees of freedom, the App estimates and plots the new predicted pressure values.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Statistical Summary of Pressure Dataset.</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Summary tab shows some stats from the original pressure data.</p>
+
+<pre><code>##   temperature     pressure       
+##  Min.   :  0   Min.   :  0.0002  
+##  1st Qu.: 90   1st Qu.:  0.1800  
+##  Median :180   Median :  8.8000  
+##  Mean   :180   Mean   :124.3367  
+##  3rd Qu.:270   3rd Qu.:126.5000  
+##  Max.   :360   Max.   :806.0000
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Table Tab and Predicted Tab.</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/img2.png" alt="alt text">  <img src="assets/img/img3.png" alt="alt text"> <img src="assets/img/img4.png" alt="alt text"></p>
+
+<p><img src="assets/img/img5.png" alt="alt text">   <img src="assets/img/img6.png" alt="alt text"> </p>
+
+<ul>
+<li>The original and estimated values are displayed.</li>
+<li>The Adjusted R Squared for 3 and 8 degrees are showed.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Predicting Pressure Application.'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Predicing Pressure View.'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Statistical Summary of Pressure Dataset.'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Table Tab and Predicted Tab.'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
